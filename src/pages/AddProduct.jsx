@@ -10,7 +10,7 @@ import {Tooltip} from "@mui/material/"
 
 const AddProduct = () => {
 
-  const apiUrl="https://scandiweb-products-app-backend-production.up.railway.app";
+  const apiUrl=process.env.REACT_APP_BACKEND_URL;
   const [getSKU,setSKU]=useState("");
   const [getName,setName]=useState("");
   const [getPrice,setPrice]=useState("");

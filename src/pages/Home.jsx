@@ -4,7 +4,7 @@ import axios from 'axios';
 import "./home.scss";
 
 const Home = () => {
-  const apiUrl="https://scandiweb-products-app-backend-production.up.railway.app"
+  const apiUrl=process.env.REACT_APP_BACKEND_URL;
   const [getProducts, setProducts]=useState([]);
   const [getItems,setItems]=useState([]);
 
