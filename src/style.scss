@@ -1,0 +1,43 @@
+.app{
+    display:flex;
+    justify-content: center;
+    .container{
+        width:100%;
+
+        //Navbar
+        .navbar{
+            .container{
+                padding:10px 20px;
+                display:flex;
+                align-items: center;
+                background: #eee;
+                .link{
+                    text-decoration: none;
+                    &:hover h1{
+                        color:darkgray;
+                    }
+                }
+                h1{
+                    color: gray;
+                    
+                }
+                
+            }
+        }
+        //Footer
+        footer{
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 12px;
+            
+        }
+
+    }
+}
+        
+
+    
