@@ -23,6 +23,12 @@ hr{
     margin:0px;
     padding:0px;
 }
+.error-message{
+    background:pink;
+}
+.sent-message{
+    background: transparent;
+}
 form{
     display:flex;
     flex-direction: column;
@@ -58,13 +64,6 @@ form{
             width:fit-content;
             outline:none;
         }
-    }
-    
-    .error-message{
-        background:pink;
-    }
-    .sent-message{
-        background: transparent;
     }
 
     button{

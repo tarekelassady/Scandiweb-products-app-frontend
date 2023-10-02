@@ -117,14 +117,15 @@ const AddProduct = () => {
     <div className="product-add">
       <div className="product-add-header">
         <h1>Product Add</h1>
-        <p className={getError?"error-message":"sent-message"} style={{padding:"10px", textAlign:"center"}}>{getMessage}</p>
+        
         <div className="action-buttons">
           <button onClick={handleClick}>Save</button>
           <Link to="/"><button>Cancel</button></Link>
         </div>
       </div>
+      <p className={getError?"error-message":"sent-message"} style={{padding:"10px", textAlign:"center"}}>{getMessage}</p>
       <hr />
-      
+
       <form id="product_form">
       
         <div className='main-data'>
