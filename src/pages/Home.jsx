@@ -8,6 +8,7 @@ const Home = () => {
   const [getProducts, setProducts]=useState([]);
   const [getItems,setItems]=useState([]);
 
+  
   const fetchData=async()=>{
     try{
       const res=await axios.get(`${apiUrl}/api/products`);

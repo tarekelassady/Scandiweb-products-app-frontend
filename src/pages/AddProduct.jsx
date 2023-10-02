@@ -155,7 +155,7 @@ const AddProduct = () => {
         
         <div className='description'>
           <label htmlFor="">Description: </label>
-          <textarea id="description" cols="30" rows="10"></textarea>
+          <textarea id="description" cols="30" rows="10" onChange={e=>setDescription(e.target.value)}></textarea>
         </div>
         
         <p className={getError?"error-message":"sent-message"} style={{padding:"10px", textAlign:"center"}}>{getMessage}</p>
