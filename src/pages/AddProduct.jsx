@@ -147,8 +147,8 @@ const AddProduct = () => {
           <select name="" id="productType" defaultValue="type" onChange={(handleComponentsChange)}>
             <option value="type" disabled >Type</option>
             <option id="DVD" value="DVD">DVD</option>
-            <option id="Book" vaule='Book'>Book</option>
             <option id="Furniture" vaule='Furniture'>Furniture</option>
+            <option id="Book" vaule='Book'>Book</option>
           </select>
           {getTypeComponent}
         </div>
