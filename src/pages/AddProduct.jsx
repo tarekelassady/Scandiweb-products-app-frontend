@@ -24,6 +24,7 @@ const AddProduct = () => {
   const [getDescription,setDescription]=useState("");
   const [getMessage,setMessage]=useState("");
   const [getError, setError]=useState(false);
+  const [getIsVisible, setIsVisible]=useState(false);
   const [getTip,setTip]=useState();
   const navigate=useNavigate();
 
@@ -57,6 +58,7 @@ const AddProduct = () => {
     <br />xxx: Sub Type "001, 002 ...etc"<br />xxx: Serial "001, 002 ...etc"</div>)
   }
   const handleClick=async(e)=>{
+      setIsVisible(true);
       e.preventDefault();
       if(!getSKU||!getName||!getPrice||!getType){
         setError(true);
@@ -110,6 +112,7 @@ const AddProduct = () => {
     }catch(err){
       console.log(err);
     }
+    
   }
   
   
@@ -123,9 +126,9 @@ const AddProduct = () => {
           <Link to="/"><button>Cancel</button></Link>
         </div>
       </div>
-      <p className={getError?"error-message":"sent-message"} style={{padding:"10px", textAlign:"center"}}>{getMessage}</p>
+      
       <hr />
-
+      {getIsVisible&&<p className={getError?"error-message":"sent-message"} style={{padding:"10px", textAlign:"center"}}>{getMessage}</p>}
       <form id="product_form">
       
         <div className='main-data'>
