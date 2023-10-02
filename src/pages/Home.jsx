@@ -44,8 +44,8 @@ const Home = () => {
       <div className="home-header">
         <h1>Product List</h1>
         <div className='action-buttons'>
-          <Link to="/add-product"><button className='add-product'>Add</button></Link>
-          <button id="delete-product-btn" className='delete-selected' disabled={getItems.length===0? true:false } onClick={deleteSelected}>Mass Delete</button>
+          <Link to="/add-product"><button className='add-product'>ADD</button></Link>
+          <button id="delete-product-btn" className='delete-selected' disabled={getItems.length===0? true:false } onClick={deleteSelected}>MASS DELETE</button>
         </div>
         
       </div>
