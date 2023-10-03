@@ -39,11 +39,14 @@ form{
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        
         div{
             display: flex;
             justify-content: space-between;
             margin: 10px 0px 10px 0px;
-            // background: red;
+            @media screen and (max-width: 490px){
+                width:100%;
+            }
         }
         #sku-hint{
             border:none;
@@ -88,10 +91,17 @@ form{
         &-attributes{
             display: flex;
             flex-wrap: wrap;
+            @media screen and (max-width:490px) {
+                justify-content: space-between;
+                width: 100%;
+            }
             input{
                 margin-left:5px;
                 margin-right:20px;
                 outline: none;
+                @media screen and (max-width: 490px){
+                    margin:0px 0px 5px 5px;
+                }
             }  
         }
     }
