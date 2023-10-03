@@ -135,7 +135,7 @@ const AddProduct = () => {
           <Tooltip title={getTip}>
           <div>
             <label htmlFor="sku">SKU</label>  
-            <input id="sku" type="text" value={getSKU} placeholder='xxx-xxx-xxx' onMouseOver={handleChangeTip} onChange={e=>setSKU(e.target.value)}/>
+            <input id="sku" type="text" value={getSKU} placeholder='xxx-xxx-xxx' maxLength={11} onMouseOver={handleChangeTip} onChange={e=>setSKU(e.target.value)}/>
           </div>
           </Tooltip>
           <div>
