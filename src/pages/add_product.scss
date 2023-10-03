@@ -1,8 +1,5 @@
 .product-add{
     padding:0px 20px;
-    @media screen and (max-width: 490px){
-        padding:0px 10px;
-    }
 }
 .product-add-header{
     display:flex;
@@ -38,6 +35,9 @@ form{
     gap:20px;
     margin:0px 20px;
     padding:20px;
+    @media screen and (max-width: 490px){
+        padding:0px 10px;
+    }
     .main-data{
         display:flex;
         flex-wrap: wrap;
