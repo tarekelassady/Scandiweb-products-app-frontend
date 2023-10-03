@@ -5,9 +5,12 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
+    padding:10px;
     h1{
         font-size:30px;
-        // background:red;
+        @media screen and (max-width: 490px){
+            font-size: 20px;
+        }
     }
     .action-buttons{
         display:flex;
@@ -15,9 +18,9 @@
         padding:0px;
         // background:blue;
         button{
-            padding:10px 20px;
+            padding:5px 10px;
             @media screen and (max-width:490px){
-                height:70px;
+                height:50px;
                 line-height: 1.5;
             }
         }

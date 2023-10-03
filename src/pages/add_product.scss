@@ -7,7 +7,9 @@
     align-items:center;
     h1{
         font-size:30px;
-        // background:red;
+        @media screen and (max-width: 490px){
+            font-size: 20px;
+        }
     }
     .action-buttons{
         display:flex;
