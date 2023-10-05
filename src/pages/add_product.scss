@@ -100,12 +100,18 @@ form{
                 justify-content: space-between;
                 width: 100%;
             }
+            label{
+                @media screen and (max-width:490px){
+                    margin-bottom: 5px;
+                }
+            }
             input{
                 margin-left:5px;
                 margin-right:20px;
                 outline: none;
                 @media screen and (max-width: 490px){
-                    margin:0px 0px 5px 5px;
+                    margin:0px 0px 15px 0px;
+                    width:100%;
                 }
             }  
         }
